@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="540"
+	prefWidth="740" fx:controller="controller.ReservationinfoController">
+	<padding>
+		<Insets topRightBottomLeft="5" />
+	</padding>
+	<children>
+		<Label text="예 매 정 보" layoutX="60" layoutY="30" />
+		
+		<Label text="예매자 이름 : " layoutX="40" layoutY="80" />
+		<TextField fx:id="txtReserInfoName" layoutX="120" layoutY="77"
+			prefWidth="120" promptText="예매자 이름" />
+		<Label text="예매자 생년월일 : " layoutX="280" layoutY="80" />
+		<TextField fx:id="txtReserInfoBirth" layoutX="380" layoutY="77" promptText="ex)910101"/>
+		
+		<Button fx:id="btnReserInfoSearch" text="조   회" layoutX="560"
+			layoutY="77" />
+		<TableView fx:id="tvReservationInfo" layoutX="20" layoutY="130"
+			prefHeight="400" prefWidth="700" />
+		<Button fx:id="btnReserToMain" text="메인으로" layoutX="656"
+			layoutY="545" />
+	</children>
+</AnchorPane>

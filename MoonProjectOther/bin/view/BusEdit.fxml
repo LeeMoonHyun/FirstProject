@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="250"
+	prefWidth="630">
+	<padding>
+		<Insets topRightBottomLeft="5" />
+	</padding>
+	<children>
+		<Label text="버스정보 수정" layoutX="50" layoutY="30" />
+		<Label text="No." layoutX="450" layoutY="40" />
+		<TextField fx:id="txtEditBusSeq" layoutX="475" layoutY="37"
+			prefWidth="120" editable="false" />
+		<Label text="버 스 번 호" layoutX="30" layoutY="80" />
+		<TextField fx:id="txtEditBusNum" layoutX="95" layoutY="77"
+			prefWidth="150" promptText="버스번호 입력(번호판)" />
+		<Label text="운 송 회 사" layoutX="270" layoutY="80" />
+		<TextField fx:id="txtEditTransCom" layoutX="335" layoutY="77"
+			prefWidth="150" promptText="운송회사 입력" />
+		<Label text="버 스 등 급" layoutX="50" layoutY="120" />
+		<TextField fx:id="txtEditBusGrade" layoutX="115" layoutY="117"
+			prefWidth="90" promptText="버스등급" editable="false" />
+		<Label text="비고 (특이사항)" layoutX="290" layoutY="120" />
+		<TextField fx:id="txtEditBusNote" layoutX="385" layoutY="117"
+			prefWidth="200" promptText="특이사항 입력" />
+
+		<Button fx:id="btnBusEditInput" text="수정정보 입력" layoutX="200"
+			layoutY="185" prefWidth="100" />
+		<Button fx:id="btnCancelBusInput" text="취  소" layoutX="320"
+			layoutY="185" prefWidth="100" />
+	</children>
+</AnchorPane>
+

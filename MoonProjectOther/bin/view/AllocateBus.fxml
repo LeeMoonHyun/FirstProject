@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Separator?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500"
+	prefWidth="1130" fx:controller="controller.AllocateBusController">
+
+	<Separator orientation="VERTICAL" layoutX="280" prefHeight="500" />
+
+	<children>
+		<Label text="배차" layoutX="50" layoutY="30" />
+
+		<!-- 이하 검색결과 입력부분 -->
+
+		<Label text="출발지" layoutX="30" layoutY="80" />
+		<TextField fx:id="txtAllocateBusDeparture" layoutX="90"
+			layoutY="77" prefWidth="120" editable="false" />
+		<Label text="도착지" layoutX="30" layoutY="110" />
+		<TextField fx:id="txtAllocateBusArrival" layoutX="90"
+			layoutY="107" prefWidth="120" editable="false" />
+
+		<Label text="출발시간" layoutX="30" layoutY="140" />
+		<TextField fx:id="txtAllocateBusStartTime" layoutX="90"
+			layoutY="137" prefWidth="120" editable="false" />
+		<Label text="거리" layoutX="30" layoutY="170" />
+		<TextField fx:id="txtAllocateBusDistance" layoutX="90"
+			layoutY="167" prefWidth="120" editable="false" />
+
+		<Label text="소요시간" layoutX="30" layoutY="200" />
+		<TextField fx:id="txtAllocateBusLeadTime" layoutX="90"
+			layoutY="197" prefWidth="120" editable="false" />
+		<Label text="요금" layoutX="30" layoutY="230" />
+		<TextField fx:id="txtAllocateBusFee" layoutX="90" layoutY="227"
+			prefWidth="120" editable="false" />
+
+		<Label text="버스번호" layoutX="30" layoutY="260" />
+		<TextField fx:id="txtAllocateBusNumber" layoutX="90"
+			layoutY="257" prefWidth="120" editable="false" />
+		<Label text="운송회사" layoutX="30" layoutY="290" />
+		<TextField fx:id="txtAllocateBusTransCom" layoutX="90"
+			layoutY="287" prefWidth="120" editable="false" />
+
+		<Label text="버스등급" layoutX="30" layoutY="320" />
+		<TextField fx:id="txtAllocateBusGrade" layoutX="90" layoutY="317"
+			prefWidth="120" editable="false" />
+
+		<Label text="날짜선택" layoutX="30" layoutY="360" />
+		<DatePicker fx:id="dpAllocateBusDate" layoutX="90" layoutY="357"
+			editable="false" />
+
+		<Button fx:id="btnAllocateBusOk" text="배차 하기" layoutX="70"
+			layoutY="410" prefWidth="130" />
+
+		<!-- 이하 검색부분 -->
+
+		<Label text="출발지" layoutX="320" layoutY="40" />
+		<TextField fx:id="txtAllocateSearchDeparture" promptText="출발지 검색"
+			layoutX="370" layoutY="37" prefWidth="130" />
+		<Label text="도착지" layoutX="530" layoutY="40" />
+		<TextField fx:id="txtAllocateSearchArrival" promptText="도착지 검색"
+			layoutX="580" layoutY="37" prefWidth="130" />
+		<Label text="출발시간" layoutX="320" layoutY="80" />
+		<ComboBox fx:id="cbAllocateSearchStartTime" promptText="출발시간"
+			layoutX="380" layoutY="77" prefWidth="130" />
+
+		<Button fx:id="btnAllocateOpeSearch" text="노선조회" layoutX="580"
+			layoutY="77" prefWidth="130" />
+
+		<Label text="운송회사" layoutX="740" layoutY="40" />
+		<TextField fx:id="txtAllocateSearchTransCom" layoutX="800"
+			layoutY="37" promptText="운송회사 검색" prefWidth="110" />
+		<Label text="버스등급" layoutX="930" layoutY="40" />
+		<ComboBox fx:id="cbAllocateSearchBusGrade" layoutX="990"
+			layoutY="37" promptText="등급 선택" prefWidth="100" />
+
+		<Button fx:id="btnAllocateBusSearch" text="버스조회" layoutX="970"
+			layoutY="77" prefWidth="130" />
+
+		<TableView fx:id="tvAllocateOpeSearch" layoutX="320"
+			layoutY="120" prefHeight="330" prefWidth="400" />
+		<TableView fx:id="tvAllocateBusSearch" layoutX="740"
+			layoutY="120" prefHeight="330" prefWidth="370" />
+
+		<Button fx:id="btnAllocateBusToMain" text="메인으로" layoutX="1036"
+			layoutY="463" />
+	</children>
+</AnchorPane>
+

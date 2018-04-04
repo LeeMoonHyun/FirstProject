@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ComboBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="250"
+	prefWidth="700" fx:controller="controller.BusController">
+	<padding>
+		<Insets topRightBottomLeft="5" />
+	</padding>
+	<children>
+		<Label text="버스정보 관리" layoutX="50" layoutY="30" />
+		<Label text="버 스 번 호" layoutX="30" layoutY="80" />
+		<TextField fx:id="txtInputBusNum" layoutX="95" layoutY="77"
+			prefWidth="150" promptText="버스번호 입력(번호판)" />
+		<Label text="운 송 회 사" layoutX="270" layoutY="80" />
+		<TextField fx:id="txtInputTransCom" layoutX="335" layoutY="77"
+			prefWidth="150" promptText="운송회사 입력" />
+		<Label text="버 스 등 급" layoutX="50" layoutY="120" />
+		<ComboBox fx:id="cbInputBusGrade" layoutX="115" layoutY="117"
+			prefWidth="90" promptText="버스등급" />
+		<Label text="비고 (특이사항)" layoutX="290" layoutY="120" />
+		<TextField fx:id="txtBusNote" layoutX="385" layoutY="117"
+			prefWidth="200" promptText="특이사항 입력" />
+
+		<Button fx:id="btnInputBus" text="버스정보 입력" layoutX="170"
+			layoutY="185" prefWidth="100" />
+		<Button fx:id="btnEditBus" text="버스정보 수정" layoutX="290"
+			layoutY="185" prefWidth="100" />
+		<Button fx:id="btnDeleteBus" text="버스정보 삭제" layoutX="410"
+			layoutY="185" prefWidth="100" />
+		<TableView fx:id="tvBus" layoutX="20" layoutY="250"
+			prefHeight="400" prefWidth="660" />
+		<Button fx:id="btnBusToMain" text="메인으로" layoutX="616" layoutY="660" />
+	</children>
+</AnchorPane>
+

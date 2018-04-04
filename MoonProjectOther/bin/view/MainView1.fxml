@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200"
+	prefWidth="440" fx:controller="controller.MainController">
+	<padding>
+		<Insets topRightBottomLeft="5" />
+	</padding>
+	<children>
+		<Label text="고속버스 예매" layoutX="170" layoutY="20">
+			<font>
+				<Font size="15" />
+			</font>
+		</Label>
+		<Button fx:id="btnAllocateInfo" text="배차정보조회 / 예매" layoutX="30"
+			layoutY="90">
+			<font>
+				<Font size="15" />
+			</font>
+		</Button>
+		<Button fx:id="btnReservation" text="예매정보" layoutX="220"
+			layoutY="90">
+			<font>
+				<Font size="15" />
+			</font>
+		</Button>
+		
+		<Button fx:id="btnOperationSch" text="운행정보" layoutX="30"
+			layoutY="210" />
+		<Button fx:id="btnBus" text="버스정보" layoutX="100" layoutY="210" />
+		<Button fx:id="btnAllocateBus" text="버스배차" layoutX="170" layoutY="210" />
+		
+		<Button fx:id="btnMainExit" text="종료" layoutX="390" layoutY="200">
+			<font>
+				<Font size="15" />
+			</font>
+		</Button>
+	</children>
+</AnchorPane>
+

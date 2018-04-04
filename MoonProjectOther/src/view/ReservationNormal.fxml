@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="550"
+	prefWidth="620" >
+	<padding>
+		<Insets topRightBottomLeft="5" />
+	</padding>
+	<children>
+		<Label text="좌석선택" layoutX="20" layoutY="20" textFill="PURPLE">
+			<font>
+				<Font size="15" />
+			</font>
+		</Label>
+		<Label text="매수선택" layoutX="50" layoutY="60" />
+		<Label text="어른" layoutX="25" layoutY="100" />
+		<ComboBox fx:id="cbAdult" layoutX="75" layoutY="97"
+			prefWidth="100" />
+		<Label text="아동" layoutX="25" layoutY="130" />
+		<ComboBox fx:id="cbKid" layoutX="75" layoutY="127" prefWidth="100" />
+		<Label text="중고생" layoutX="25" layoutY="160" />
+		<ComboBox fx:id="cbAdolescent" layoutX="75" layoutY="157"
+			prefWidth="100" />
+		<Button fx:id="btnClear" text="전체 초기화" layoutX="180" layoutY="157" />
+
+		<Label text="선택 매수 및 금액" layoutX="40" layoutY="210" />
+		<Label text="***********************************" layoutX="20"
+			layoutY="235" />
+
+		<Label text="어   른" layoutX="35" layoutY="260" />
+		<TextField fx:id="txtAdultNum" layoutX="78" layoutY="257"
+			prefWidth="30" editable="false" />
+		<Label text="명" layoutX="110" layoutY="260" />
+		<TextField fx:id="txtAdultFee" layoutX="130" layoutY="257"
+			prefWidth="90" editable="false" />
+		<Label text="￦" layoutX="223" layoutY="260" />
+
+		<Label text="아   동" layoutX="35" layoutY="290" />
+		<TextField fx:id="txtKidNum" layoutX="78" layoutY="287"
+			prefWidth="30" editable="false" />
+		<Label text="명" layoutX="110" layoutY="290" />
+		<TextField fx:id="txtKidFee" layoutX="130" layoutY="287"
+			prefWidth="90" editable="false" />
+		<Label text="￦" layoutX="223" layoutY="290" />
+
+		<Label text="중고생" layoutX="35" layoutY="320" />
+		<TextField fx:id="txtAdoleNum" layoutX="78" layoutY="317"
+			prefWidth="30" editable="false" />
+		<Label text="명" layoutX="110" layoutY="320" />
+		<TextField fx:id="txtAdoleFee" layoutX="130" layoutY="317"
+			prefWidth="90" editable="false" />
+		<Label text="￦" layoutX="223" layoutY="320" />
+
+		<Label text="***********************************" layoutX="30"
+			layoutY="355" />
+		<Label text="총금액  :                                 ￦" layoutX="50"
+			layoutY="385" />
+		<TextField fx:id="txtTotalFee" layoutX="110" layoutY="382"
+			prefWidth="110" editable="false" />
+
+		<Separator orientation="HORIZONTAL" layoutX="290" layoutY="20"
+			prefWidth="300" />
+		<Label text="운 전 석" layoutX="330" layoutY="40" />
+		<Label text="출 입 문" layoutX="510" layoutY="40" />
+		<Separator orientation="VERTICAL" layoutX="290" layoutY="20"
+			prefHeight="460" />
+		<Separator orientation="VERTICAL" layoutX="590" layoutY="20"
+			prefHeight="460" />
+		<Separator orientation="HORIZONTAL" layoutX="291" layoutY="70"
+			prefWidth="120" />
+		<Separator orientation="HORIZONTAL" layoutX="471" layoutY="70"
+			prefWidth="120" />
+		<Separator orientation="VERTICAL" layoutX="410" layoutY="20"
+			prefHeight="460" />
+		<Separator orientation="VERTICAL" layoutX="470" layoutY="20"
+			prefHeight="460" />
+		<Separator orientation="HORIZONTAL" layoutX="290" layoutY="480"
+			prefWidth="300" />
+		<Separator orientation="VERTICAL" layoutX="350" layoutY="70"
+			prefHeight="410" />
+		<Separator orientation="VERTICAL" layoutX="530" layoutY="70"
+			prefHeight="410" />
+
+		<CheckBox fx:id="check1" layoutX="305" layoutY="90" text="1" />
+		<CheckBox fx:id="check2" layoutX="365" layoutY="90" text="2" />
+		<CheckBox fx:id="check3" layoutX="485" layoutY="90" text="3" />
+		<CheckBox fx:id="check4" layoutX="545" layoutY="90" text="4" />
+
+		<CheckBox fx:id="check5" layoutX="305" layoutY="130" text="5" />
+		<CheckBox fx:id="check6" layoutX="365" layoutY="130" text="6" />
+		<CheckBox fx:id="check7" layoutX="485" layoutY="130" text="7" />
+		<CheckBox fx:id="check8" layoutX="545" layoutY="130" text="8" />
+
+		<CheckBox fx:id="check9" layoutX="305" layoutY="170" text="9" />
+		<CheckBox fx:id="check10" layoutX="365" layoutY="170" text="10" />
+		<CheckBox fx:id="check11" layoutX="485" layoutY="170" text="11" />
+		<CheckBox fx:id="check12" layoutX="545" layoutY="170" text="12" />
+
+		<CheckBox fx:id="check13" layoutX="305" layoutY="210" text="13" />
+		<CheckBox fx:id="check14" layoutX="365" layoutY="210" text="14" />
+		<CheckBox fx:id="check15" layoutX="485" layoutY="210" text="15" />
+		<CheckBox fx:id="check16" layoutX="545" layoutY="210" text="16" />
+
+		<CheckBox fx:id="check17" layoutX="305" layoutY="250" text="17" />
+		<CheckBox fx:id="check18" layoutX="365" layoutY="250" text="18" />
+		<CheckBox fx:id="check19" layoutX="485" layoutY="250" text="19" />
+		<CheckBox fx:id="check20" layoutX="545" layoutY="250" text="20" />
+
+		<CheckBox fx:id="check21" layoutX="305" layoutY="290" text="21" />
+		<CheckBox fx:id="check22" layoutX="365" layoutY="290" text="22" />
+		<CheckBox fx:id="check23" layoutX="485" layoutY="290" text="23" />
+		<CheckBox fx:id="check24" layoutX="545" layoutY="290" text="24" />
+
+		<CheckBox fx:id="check25" layoutX="305" layoutY="330" text="25" />
+		<CheckBox fx:id="check26" layoutX="365" layoutY="330" text="26" />
+		<CheckBox fx:id="check27" layoutX="485" layoutY="330" text="27" />
+		<CheckBox fx:id="check28" layoutX="545" layoutY="330" text="28" />
+
+		<CheckBox fx:id="check29" layoutX="305" layoutY="370" text="29" />
+		<CheckBox fx:id="check30" layoutX="365" layoutY="370" text="30" />
+		<CheckBox fx:id="check31" layoutX="485" layoutY="370" text="31" />
+		<CheckBox fx:id="check32" layoutX="545" layoutY="370" text="32" />
+
+		<CheckBox fx:id="check33" layoutX="305" layoutY="410" text="33" />
+		<CheckBox fx:id="check34" layoutX="365" layoutY="410" text="34" />
+		<CheckBox fx:id="check35" layoutX="485" layoutY="410" text="35" />
+		<CheckBox fx:id="check36" layoutX="545" layoutY="410" text="36" />
+
+		<CheckBox fx:id="check37" layoutX="305" layoutY="450" text="37" />
+		<CheckBox fx:id="check38" layoutX="365" layoutY="450" text="38" />
+		<CheckBox fx:id="check39" layoutX="485" layoutY="450" text="39" />
+		<CheckBox fx:id="check40" layoutX="545" layoutY="450" text="40" />
+		
+		<Label text="선택된 좌석 번호" layoutX="300" layoutY="490" />
+		<TextField fx:id="txtSeatNumber1" layoutX="290" layoutY="520" prefWidth="40" editable="false" />
+		<TextField fx:id="txtSeatNumber2" layoutX="340" layoutY="520" prefWidth="40" editable="false" />
+		<TextField fx:id="txtSeatNumber3" layoutX="390" layoutY="520" prefWidth="40" editable="false" />
+		<TextField fx:id="txtSeatNumber4" layoutX="440" layoutY="520" prefWidth="40" editable="false" />
+		
+		<Label text="이름 : " layoutX="30" layoutY="430" />
+		<TextField fx:id="txtReserName" layoutX="90" layoutY="427" promptText="예매자 이름"/>
+		<Label text="생년월일 : " layoutX="30" layoutY="460" />
+		<TextField fx:id="txtReserBirth" layoutX="90" layoutY="457" promptText="ex)910101" />
+
+		<Button fx:id="btnSeatReset" text="좌석 다시 선택하기" layoutX="500" layoutY="520" prefWidth="120"/>
+		
+		<Button fx:id="btnInputNumber" text="인원입력" layoutX="20"
+			layoutY="490" prefWidth="80" />
+		<Button fx:id="btnInputFee" text="요금계산" layoutX="100" layoutY="490"
+			prefWidth="80" />
+		<Button fx:id="btnInputTotal" text="총요금" layoutX="180" layoutY="490"
+			prefWidth="80" />
+			
+		<Button fx:id="btnSeatSelect" text="선택완료" layoutX="20" layoutY="520"
+			prefWidth="120" />
+		<Button fx:id="btnSeatCancel" text="취  소" layoutX="140"
+			layoutY="520" prefWidth="120" />
+	</children>
+</AnchorPane>
+
